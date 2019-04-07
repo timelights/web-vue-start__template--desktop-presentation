@@ -3,8 +3,9 @@
         <div class="content">
             <h1>Scripting Tool</h1>
             <h3>update multiple scripts at once</h3>
+            <!-- Download button | Over.vue -->
             <a class="mdc-button mdc-button--raised mdc-theme--secondary-bg"
-                href="assets/QA Scripting Tool v20190209.zip"
+                href="download/QA Scripting Tool v20190209.zip"   
             >
                 <i class="material-icons mdc-button__icon">file_download</i>
                 <span class="mdc-button__label">
@@ -26,7 +27,7 @@ export default {
 
 
 <style lang="scss" scoped>
-$bg-image: url("assets/bg.webp");
+$bg-image: url("download/bg.webp");
 a {
     margin-top: 20px;
     width: 150px;

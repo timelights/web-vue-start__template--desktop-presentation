@@ -12,6 +12,7 @@ module.exports = {
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),
+            Assets: path.resolve(__dirname, "src/assets"),
         }
     },
     mode: "production",
@@ -23,7 +24,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[name]-[hash].js",
+        filename: "js/[name]-[hash].js",
     },
     optimization: {
         minimizer: [
@@ -61,6 +62,20 @@ module.exports = {
                 test: /\.js$/,
                 use: 'babel-loader'
             },
+            {
+                test: /\.html$/,
+                use: 'html-loader'
+            },
+            {
+                test: /\.(jpg|png|webp)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[hash].[ext]',
+                        outputPath: 'imgs'
+                    }
+                }
+            }
         ]
     },
     plugins: [

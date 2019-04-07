@@ -6,7 +6,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin")
 module.exports = {
     resolve: {
         alias: {
-            "@": path.resolve(__dirname, "src")
+            "@": path.resolve(__dirname, "src"),
+            Assets: path.resolve(__dirname, "src/assets")
         }
     },
     mode: "development",
@@ -40,6 +41,19 @@ module.exports = {
                 test: /\.js$/,
                 use: 'babel-loader'
             },
+            {
+                test: /\.html$/,
+                use: 'html-loader'
+            },
+            {
+                test: /\.(jpg|png|webp)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]'
+                    }
+                }
+            }
         ]
     },
     plugins: [

@@ -38,7 +38,8 @@
         </div>
 
         <!-- Fixed Position -->
-        <a href="assets/QA Scripting Tool v20190209.zip" id="fab-download" class="mdc-fab" aria-label="Favorite">
+        <!-- Download (fab) button | TabBar.vue -->
+        <a href="download/QA Scripting Tool v20190209.zip" id="fab-download" class="mdc-fab" aria-label="Favorite">
             <span class="mdc-fab__icon material-icons">file_download</span>
         </a>
     </div>

@@ -3,7 +3,7 @@
         <div class="mdc-layout-grid__inner">
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                 <div class="img-container">
-                    <img src="assets/excel.png"/>
+                    <img src="~Assets/excel.png"/>
                 </div>
             </div>
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-11">
